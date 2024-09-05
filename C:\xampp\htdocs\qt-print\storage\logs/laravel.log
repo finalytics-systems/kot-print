@@ -1,0 +1,22 @@
+[2024-09-04 08:17:20] production.ERROR: file_get_contents(/opt/lampp/htdocs/qt-print/.env): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_get_contents(/opt/lampp/htdocs/qt-print/.env): Failed to open stream: No such file or directory at /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php:96)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_get_conten...', '/opt/lampp/htdo...', 96)
+#1 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(96): file_get_contents('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(80): Illuminate\\Foundation\\Console\\KeyGenerateCommand->writeNewEnvironmentFileWith('base64:LpoFMb1r...')
+#3 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(45): Illuminate\\Foundation\\Console\\KeyGenerateCommand->setKeyInEnvironmentFile('base64:LpoFMb1r...')
+#4 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Console\\KeyGenerateCommand->handle()
+#5 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#8 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Container/Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#9 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Illuminate\\Container\\Container->call(Array)
+#10 /opt/lampp/htdocs/qt-print/vendor/symfony/console/Command/Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Console/Command.php(120): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 /opt/lampp/htdocs/qt-print/vendor/symfony/console/Application.php(1040): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /opt/lampp/htdocs/qt-print/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\KeyGenerateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /opt/lampp/htdocs/qt-print/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Console/Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /opt/lampp/htdocs/qt-print/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /opt/lampp/htdocs/qt-print/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 {main}
+"} 
